@@ -1,0 +1,31 @@
+# Exclude sensitive data
+sites/*/private/*
+sites/*/site_config.json
+sites/*/locks/*
+
+# Exclude database
+sites/*/*.sql
+sites/*/private/backups/*
+
+# Exclude logs
+logs/*
+*.log
+
+# Exclude virtual environment
+env/
+
+# Exclude node modules
+node_modules/
+**/node_modules/
+
+# Exclude build files
+sites/assets/*
+
+# Exclude compiled Python files
+*.pyc
+__pycache__/
+
+# Exclude system files
+.DS_Store
+*.swp
+*.swo
