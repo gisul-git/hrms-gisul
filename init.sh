@@ -29,9 +29,9 @@ if [ ! -d "sites/erp.localhost" ]; then
   echo "Creating new ERPNext site..."
   bench new-site erp.localhost \
     --db-root-username root \
-    --mariadb-root-password ${MARIADB_ROOT_PASSWORD} \
-    --admin-password ${ADMIN_PASSWORD:-Admin@123} \
-    --db-host ${DB_HOST} \
+    --mariadb-root-password "${MARIADB_ROOT_PASSWORD}" \
+    --admin-password "${ADMIN_PASSWORD}" \
+    --db-host "${DB_HOST}" \
     --install-app erpnext
 
   bench use erp.localhost
